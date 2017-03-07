@@ -24,7 +24,7 @@ Fast setup of Hello World in React:
 10.Navigate back to your root directory 
 11.$ touch webpack.config.js  
 12.npm install webpack@2.1.0-beta.22 --save-dev  
-13.Setup webpack.config.js:   
+13.Setup webpack.config.js: 
   
 module.exports = {  
   entry: "./app/components/Main.js",  
