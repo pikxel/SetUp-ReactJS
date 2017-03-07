@@ -8,9 +8,9 @@ Fast setup of Hello World in React:
 5.$ npm install --save babel-core babel-loader babel-preset-es2015 babel-preset-react  
 6.$ mkdir public (you have to be inside of your root folder)  
 7.$ cd public  
-8.$ touch Main.htm  
+8.$ touch Main.html  
 9. Edit Main.html:   
-10.Navigate back to your root directory 
+10.Navigate back to your root directory  
 11.$ touch webpack.config.js  
 12.npm install webpack@2.1.0-beta.22 --save-dev  
 13.Setup webpack.config.js:   
