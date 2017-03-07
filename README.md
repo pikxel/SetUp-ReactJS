@@ -4,7 +4,7 @@ Fast setup of Hello World in React:
 1.Make the root folder for your app.
 2.$ npm init
 3.$ npm install --save react
-4.$ npm install --save react-dom
+d4.$ npm install --save react-dom
 5.$ npm install --save babel-core babel-loader babel-preset-es2015 babel-preset-react
 6.$ mkdir public (you have to be inside of your root folder)
 7.$ cd public
