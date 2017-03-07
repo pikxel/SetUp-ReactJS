@@ -1,0 +1,12 @@
+Project Tree:  
+Root  
+  ->app  
+     ->components  
+        -> Main.js  
+  ->node_modules  
+        ->Many folder used by React,Babel and Webpack  
+  ->public  
+        ->bundle.js -it is created by webpack(I guess)  
+        ->Main.html  
+  ->package.json  
+  ->webpack.config.js  
