@@ -9,7 +9,7 @@ Fast setup of Hello World in React:
 6.$ mkdir public (you have to be inside of your root folder)  
 7.$ cd public  
 8.$ touch Main.htm  
-9. Edit Main.html :  
+9. Edit Main.html:  
   
 <!DOCTYPE html>  
 <head>  
@@ -33,40 +33,40 @@ module.exports = {
     },  
   module: {   
     loaders: [  
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015']
-        }
-      }
-    ]
-  }
-}
-
-14.$ mkdir app
-15 $ cd app
-16 $ mkdir components
-17 $ cd components
-18 $ touch Main.js
-19 Edit Main.js 
-
-var React = require('react');
-  var ReactDOM = require('react-dom');
-
-  var Main = React.createClass({
-    render: function(){
-      return(
-        <div>
-          Hello World
-        </div>
-      )
-    }
-  });
-
-  ReactDOM.render(<Main />, document.getElementByID('app'))
+      {  
+        test: /\.jsx?$/,  
+        exclude: /(node_modules|bower_components)/,  
+        loader: 'babel',  
+        query: {  
+          presets: ['react', 'es2015']  
+        }  
+      }  
+    ]  
+  }  
+}  
   
+14.$ mkdir app  
+15 $ cd app  
+16 $ mkdir components  
+17 $ cd components  
+18 $ touch Main.js  
+19 Edit Main.js   
   
-  20.$ wewbpack -w 
-  21. Enjoy coding
+var React = require('react');  
+  var ReactDOM = require('react-dom');  
+  
+  var Main = React.createClass({  
+    render: function(){  
+      return(  
+        <div>  
+          Hello World  
+        </div>  
+      )  
+    }  
+  });  
+  
+  ReactDOM.render(<Main />, document.getElementByID('app'))  
+    
+    
+  20.$ wewbpack -w  
+  21. Enjoy coding  
