@@ -1,38 +1,38 @@
 # SetUp-ReactJS
-Fast setup of Hello World in React:
+Fast setup of Hello World in React:  
 
-1.Make the root folder for your app.
-2.$ npm init
-3.$ npm install --save react
-d4.$ npm install --save react-dom
-5.$ npm install --save babel-core babel-loader babel-preset-es2015 babel-preset-react
-6.$ mkdir public (you have to be inside of your root folder)
-7.$ cd public
-8.$ touch Main.htm
-9. Edit Main.html :
-
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <div id="app"></div>
-  <script src="bundle.js"></script>
-</body>
-</html>
-
-10.Navigate back to your root directory
-11.$ touch webpack.config.js
-12.npm install webpack@2.1.0-beta.22 --save-dev
-13.Setup webpack.config.js: 
-
-module.exports = {
-  entry: "./app/components/Main.js",
-  output: {
-    filename: "public/bundle.js"
-  },
-  module: {
-    loaders: [
+1.Make the root folder for your app.  
+2.$ npm init  
+3.$ npm install --save react  
+4.$ npm install --save react-dom  
+5.$ npm install --save babel-core babel-loader babel-preset-es2015 babel-preset-react  
+6.$ mkdir public (you have to be inside of your root folder)  
+7.$ cd public  
+8.$ touch Main.htm  
+9. Edit Main.html :  
+  
+<!DOCTYPE html>  
+<head>  
+  <meta charset="UTF-8">  
+</head>  
+<body>  
+  <div id="app"></div>  
+  <script src="bundle.js"></script>  
+</body>  
+</html>  
+  
+10.Navigate back to your root directory 
+11.$ touch webpack.config.js  
+12.npm install webpack@2.1.0-beta.22 --save-dev  
+13.Setup webpack.config.js:   
+  
+module.exports = {  
+  entry: "./app/components/Main.js",  
+  output: {  
+    filename: "public/bundle.js"  
+    },  
+  module: {   
+    loaders: [  
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
