@@ -9,64 +9,16 @@ Fast setup of Hello World in React:
 6.$ mkdir public (you have to be inside of your root folder)  
 7.$ cd public  
 8.$ touch Main.htm  
-9. Edit Main.html:  
-  
-<!DOCTYPE html>  
-<head>  
-  <meta charset="UTF-8">  
-</head>  
-<body>  
-  <div id="app"></div>  
-  <script src="bundle.js"></script>  
-</body>  
-</html>  
-  
+9. Edit Main.html:   
 10.Navigate back to your root directory 
 11.$ touch webpack.config.js  
 12.npm install webpack@2.1.0-beta.22 --save-dev  
-13.Setup webpack.config.js: 
-  
-module.exports = {  
-  entry: "./app/components/Main.js",  
-  output: {  
-    filename: "public/bundle.js"  
-    },  
-  module: {   
-    loaders: [  
-      {  
-        test: /\.jsx?$/,  
-        exclude: /(node_modules|bower_components)/,  
-        loader: 'babel',  
-        query: {  
-          presets: ['react', 'es2015']  
-        }  
-      }  
-    ]  
-  }  
-}  
-  
+13.Setup webpack.config.js:   
 14.$ mkdir app  
 15 $ cd app  
 16 $ mkdir components  
 17 $ cd components  
 18 $ touch Main.js  
-19 Edit Main.js   
-  
-var React = require('react');  
-  var ReactDOM = require('react-dom');  
-  
-  var Main = React.createClass({  
-    render: function(){  
-      return(  
-        <div>  
-          Hello World  
-        </div>  
-      )  
-    }  
-  });  
-  
-  ReactDOM.render(<Main />, document.getElementByID('app'))  
-    
-    
-  20.$ wewbpack -w  
-  21. Enjoy coding  
+19 Edit Main.js     
+20.$ wewbpack -w  
+21. Enjoy coding
