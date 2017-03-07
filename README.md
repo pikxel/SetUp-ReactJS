@@ -1,7 +1,6 @@
 # SetUp-ReactJS
 Fast setup of Hello World in React:
 
-
 1.Make the root folder for your app.
 2.$ npm init
 3.$ npm install --save react
