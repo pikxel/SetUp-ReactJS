@@ -11,4 +11,4 @@ var React = require('react');
     }
   });
 
-  ReactDOM.render(<Main />, document.getElementByID('app'))
+  ReactDOM.render(<Main />, document.getElementById('app'))
